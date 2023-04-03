@@ -5,7 +5,7 @@ import store from "./store"
 
 import DashboardLayout from "./layouts/DashboardLayout"
 
-import NoAuthPage from "./pages/NoAuthPage"
+import LogAuthPage from "./pages/LogAuthPage"
 import DashboardPage from "./pages/DashboardPage"
 
 import LoadScreen from "./screens/LoadScreen"
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Provider store={store}>
         <Routes>
-          <Route path="/" element={<NoAuthPage />} />
+          <Route path="/" element={<LogAuthPage />} />
 
           <Route path="/lawfirm" element={<DashboardLayout />}>
             <Route index element={<DashboardPage />} />

@@ -48,8 +48,48 @@ const ThemeApp = createTheme({
             }
           }
         }
+      },
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            '& input': {
+              paddingBottom: '15px',
+              paddingTop: '15px',
+              fontSize: '16px',
+              fontFamily: "'Roboto', sans-serif",
+              color: 'black',
+              fontWeight: 300,
+            },
+            '& fieldset': {
+              borderRadius: '5px',
+            }
+          }
+        }
       }
     }
 });
+
+ThemeApp.typography.h1 = {
+  fontSize: '35px',
+  textTransform: 'uppercase',
+  fontFamily: "'Montserrat', sans-serif",
+  // '@media (min-width:600px)': {
+  //   fontSize: '1.5rem',
+  // },
+  // [theme.breakpoints.up('md')]: {
+  //   fontSize: '2.4rem',
+  // },
+};
+
+ThemeApp.typography.h2 = {
+  fontSize: '28px',
+  textTransform: 'uppercase',
+  fontFamily: "'Montserrat', sans-serif",
+};
+
+ThemeApp.typography.h6 = {
+  fontSize: '18px',
+  fontFamily: "'Roboto', sans-serif",
+};
 
 export default ThemeApp;
