@@ -6,6 +6,9 @@ import store from "./store"
 import DashboardLayout from "./layouts/DashboardLayout"
 
 import LogAuthPage from "./pages/LogAuthPage"
+import SetPasswordStep from "./pages/SetPasswordStep"
+import RecoverPassword from "./pages/RecoverPassword"
+
 import DashboardPage from "./pages/DashboardPage"
 
 import LoadScreen from "./screens/LoadScreen"
@@ -19,6 +22,8 @@ function App() {
       <Provider store={store}>
         <Routes>
           <Route path="/" element={<LogAuthPage />} />
+          <Route path="/newuser" element={<SetPasswordStep />} />
+          <Route path="/recover-password" element={<RecoverPassword />} />
 
           <Route path="/lawfirm" element={<DashboardLayout />}>
             <Route index element={<DashboardPage />} />
